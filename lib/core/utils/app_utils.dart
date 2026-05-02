@@ -678,7 +678,7 @@ class AppUtils {
     bool allowMultiple = false,
   }) async {
     try {
-      FilePickerResult? result = await FilePicker.platform.pickFiles(
+      FilePickerResult? result = await FilePicker.pickFiles(
         type: FileType.custom,
         allowedExtensions: allowedExtensions,
         dialogTitle: dialogTitle,
@@ -701,7 +701,7 @@ class AppUtils {
     String? dialogTitle,
   }) async {
     try {
-      FilePickerResult? result = await FilePicker.platform.pickFiles(
+      FilePickerResult? result = await FilePicker.pickFiles(
         type: FileType.custom,
         allowedExtensions: allowedExtensions,
         dialogTitle: dialogTitle,
@@ -727,7 +727,7 @@ class AppUtils {
     String? dialogTitle,
   }) async {
     try {
-      FilePickerResult? result = await FilePicker.platform.pickFiles(
+      FilePickerResult? result = await FilePicker.pickFiles(
         type: FileType.custom,
         allowedExtensions: allowedExtensions ?? ['pdf', 'doc', 'docx', 'txt'],
         dialogTitle: dialogTitle ?? 'Select Document',
@@ -749,7 +749,7 @@ class AppUtils {
     String? dialogTitle,
   }) async {
     try {
-      FilePickerResult? result = await FilePicker.platform.pickFiles(
+      FilePickerResult? result = await FilePicker.pickFiles(
         type: FileType.custom,
         allowedExtensions: allowedExtensions ?? ['mp4', 'avi', 'mov', 'mkv'],
         dialogTitle: dialogTitle ?? 'Select Video',
@@ -771,7 +771,7 @@ class AppUtils {
     String? dialogTitle,
   }) async {
     try {
-      FilePickerResult? result = await FilePicker.platform.pickFiles(
+      FilePickerResult? result = await FilePicker.pickFiles(
         type: FileType.custom,
         allowedExtensions: allowedExtensions ?? ['mp3', 'wav', 'aac', 'm4a'],
         dialogTitle: dialogTitle ?? 'Select Audio',
